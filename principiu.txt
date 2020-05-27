@@ -1,0 +1,41 @@
+Rezolvare problemei S10.4(S1.34)
+
+Program realizat de studentii:
+Peleskov Semion, Energetica 2104_1D,
+Rescanu Ana-Maria-Ruxandra, Energetica 2102_1D.
+
+Enuntam datele initiale:
+m = DE_LA_TASTATURA
+p = DE_LA_TASTATURA
+sigma = DE_LA_TASTATURA
+
+# Discutie
+I.  CAZ p < m:
+        alpha = Functia Laplace aplicata lui (m-p)/sigma
+        beta = Functia Laplace aplicata lui (m+p)/sigma
+        relatie = beta - alpha
+
+        i)CAZ relatie > 1/2:
+            p(A) > p(B)
+
+        ii)ALT_CAZ relatie < 1/2:
+            p(A) < p(B)
+
+II. ALT_CAZ p > m:
+        alpha = Functia Laplace aplicata lui (p-m)/sigma
+        beta = Functia Laplace aplicata lui (m+p)/sigma
+        relatie = beta + alpha
+
+        i)CAZ relatie > 3/2:
+            p(A) > p(B)
+
+        ii)ALT_CAZ relatie < 3/2:
+            p(A) < p(B)
+
+Urmatoarea_Problema
+
+Exemple:
+1) I.  i)  m = 0.84, p = 0.8, sigma = 1;
+2) I.  ii) m = 0.5, p = 0.1, sigma = 2 (din problema);
+3) II. i)  m = 0.54, p = 0.97, sigma = 1;
+4) II. ii) m = 0.37, p = 0.55, sigma = 3.
